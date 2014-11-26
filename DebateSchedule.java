@@ -2,6 +2,7 @@
 
 import java.util.*;
 
+//now i have to come home
 public class DebateSchedule 
 {    
     
@@ -27,42 +28,5 @@ public class DebateSchedule
         int y = 0;
         int z = teamArray.length - 1;
         
-        while (rounds > counter)
-        {
-            while (y < z)
-            {
-                //System.out.print(teamArray[y].teamName + " vs. " + teamArray[z].teamName + "      ");
-                y++;
-                z--;
-            }
-            
-            System.out.println();
-            y = 0;
-            z = teamArray.length - 1;
-            
-            tempTeam = teamArray[teamArray.length - 1];
-
-            k = teamArray.length - 1;
-
-            while (k > 1)
-            {
-                teamArray[k] = teamArray[k-1];
-                k--;
-            }
-
-            teamArray[1] = tempTeam;
-            counter++;
-            
-        
-        }
-        
-/*        k = 0;
-        
-        while (k < teamArray.length)
-        {
-            //System.out.println(teamArray[k].teamName);
-            k++;
-        }
-       */ 
-    }    
+    }
 }
